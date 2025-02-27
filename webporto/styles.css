@@ -1,0 +1,171 @@
+header, footer {
+    background-color: #f0f0f0; /* Warna latar belakang header dan footer */
+}
+
+header {
+    position: sticky; /* Membuat header tetap di atas saat di-scroll */
+    top: 0; /* Menempelkan header ke atas layar */
+    z-index: 100; /* Memastikan header berada di atas elemen lain */
+}
+
+footer p {
+    text-align: center; /* Teks footer di tengah */
+    padding: 1rem 0; /* Menambahkan padding agar tidak terlalu rapat */
+}
+
+nav {
+    display: flex; /* Menggunakan flexbox untuk tata letak navigasi */
+    justify-content: space-between; /* Menata item navigasi dengan spasi di antara mereka */
+    align-items: center; /* Memusatkan item navigasi secara vertikal */
+    padding: 0.5rem 0; /* Menambahkan padding agar tidak terlalu rapat */
+}
+
+nav p a {
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    color: #333; /* Warna teks tautan */
+    font-weight: bold; /* Teks tautan tebal */
+    font-size: 1.2rem; /* Ukuran font tautan */
+}
+
+nav p a:hover {
+    border-bottom: 2px solid #007bff; /* Garis bawah saat hover */
+}
+
+nav ul li {
+    list-style-type: none; /* Menghapus bullet pada list */
+    display: inline-block; /* Menata item list secara horizontal */
+}
+
+nav ul li a {
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    color: #555; /* Warna teks tautan */
+    margin-left: 1rem; /* Spasi antar item menu */
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #007bff; /* Garis bawah saat hover */
+}
+
+i {
+    font-size: 1.5rem; /* Ukuran ikon */
+    color: #555; /* Warna ikon */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Menggabungkan border tabel */
+}
+
+table tr td {
+    vertical-align: top; /* Teks di sel tabel rata atas */
+    padding: 0.5rem; /* Padding sel tabel */
+    border-bottom: 1px solid #eee; /* Border bawah sel tabel */
+}
+
+progress {
+    width: 100%; /* Lebar progress bar */
+    border-radius: 5px; /* Sudut progress bar membulat */
+    background-color: #eee; /* Warna latar belakang progress bar */
+    height: 10px; /*Tinggi progress bar*/
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 5px; /* Sudut progress bar membulat */
+    background-color: #eee; /* Warna latar belakang progress bar */
+}
+
+progress::-webkit-progress-value {
+    border-radius: 5px; /* Sudut nilai progress bar membulat */
+    background-color: #007bff; /* Warna nilai progress bar */
+}
+
+html {
+    scroll-padding-top: 60px; /* Menambahkan padding saat scroll ke anchor */
+    scroll-behavior: smooth; /* Efek scroll halus */
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.6; /* Spasi antar baris teks */
+}
+
+.container {
+    padding: 1rem;
+    margin: 0 auto; /* Memusatkan container */
+    max-width: 1200px; /* Lebar maksimum container */
+}
+
+#projects {
+    padding: 20px;
+    text-align: center; /* Memusatkan teks secara keseluruhan */
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan item proyek untuk berpindah baris */
+    justify-content: center; /* Memusatkan item proyek secara horizontal */
+}
+
+.project-item {
+    width: 45%; /* Atau sesuaikan sesuai kebutuhan */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar */
+}
+
+.project-item img {
+    display: block; /* Membuat gambar menjadi elemen blok */
+    margin: 0 auto 10px; /* Memusatkan gambar secara horizontal dan memberikan margin bawah */
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar kontainer */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+}
+
+.project-item h3 {
+    margin-bottom: 5px;
+}
+
+.project-item p {
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+    .project-item {
+        width: 90%; /* Mengisi hampir seluruh lebar layar */
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
